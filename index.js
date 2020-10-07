@@ -18,8 +18,8 @@ Do the following:
 
    HINT: no function required
 */
-let votingAge = 18;
-if(votingAge >18){true;}
+// let votingAge = 18;
+//  if votingAge > 18 = true;
 
 /*
 Task 1b - Values
@@ -34,7 +34,6 @@ Do the following:
 
 let var1 = 8;
 let var2 = 7;
-if 
 
 
 
@@ -48,9 +47,9 @@ Do the following:
 
    HINT: look up the Number method
 */
-var year = "1999";
-year = Number(year);
-console.log(year);
+// let year = "1999";
+// year = Number(year);
+// console.log(year);
 /*
 Task 1d - Multiply
  
@@ -154,58 +153,50 @@ Use the game function below to do the following:
   
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
-
-function game(any){
-let compChoice = Math.ceil(Math.random()*3);
- 
-   if(compChoice = 0){
-   compChoice = 'scissors';
-   }
-   else if(compChoice = 1){
-     compChoice = "rock";
-   }
-   else if(compChoice = 2){
-     compChoice = "paper";
-   }
-
-   if(any === "scissors"){
-
-   if(compChoice === "rock"){
-       return "you lose!";
+let compChoice = Math.floor(Math.random()*3);
+  
+     if(compChoice === 0){
+     compChoice = 'scissors';
      }
-    else if(compChoice === "scissors"){
+     else if(compChoice === 1){
+       compChoice = "rock";
+     }
+     else if(compChoice === 2){
+       compChoice = "paper";  
+     }
+function game(choice,compChoice){
 
-       return "it's a tie";
-     }
-     else if(compChoice === "paper"){
-       return "you win!";
-     }
-    }
-     if(any === "rock"){ 
-       
-      if(compChoice === "rock"){
-      return "it's a tie";
-    }
-    else if(compChoice === "scissors"){
-      return "you win!";
-    }
-    else if(compChoice === "paper"){
-      return "you lose!";
-    }
+  
+     if(choice === "scissors" && compChoice === "rock"){
+            return "you lose!";
+          }
+          else if(choice === "scissors" && compChoice === "scissors"){
+  
+            return "it's a tie";
+          }
+          else if(choice === "scissors" && compChoice === "paper"){
+            return "you win!";
+          }
+          else if(choice === "rock" && compChoice === "rock"){
+            return "it's a tie";
+          }
+          else if(choice === "rock" && compChoice === "scissors"){
+            return "you win!";
+          }
+          else if(choice === "rock" && compChoice === "paper"){
+            return "you lose!";
+          }
+          else if(choice === "paper" && compChoice === "rock"){
+            return "you win!";
+          }
+          else if(choice === "paper" && compChoice === "scissors"){
+            return "you lose!";
+          }
+          else if(choice === "paper" && compChoice === "paper"){
+            return "it's a tie";
+      }
   }
-     if(any === "paper"){
-       if(compChoice === "rock"){
-      return "you win!";
-    }
-    else if(compChoice === "scissors"){
-      return "you lose!";
-    }
-    else if(compChoice === "paper"){
-      return "it's a tie";
-    }
-  }
-}
-console.log(game("scissors"));
+  console.log(game("paper"));
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
