@@ -196,7 +196,7 @@ function game(choice,compChoice){
             return "it's a tie";
       }
   }
-  console.log(game("paper"));
+  console.log(game("paper",compChoice));
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
