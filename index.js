@@ -18,9 +18,9 @@ Do the following:
 
    HINT: no function required
 */
-// let votingAge = 18;
-//  if votingAge > 18 = true;
-
+let votingAge = 18;
+ votingAge = true > 18;
+ console.log(votingAge);
 /*
 Task 1b - Values
 
@@ -34,7 +34,8 @@ Do the following:
 
 let var1 = 8;
 let var2 = 7;
-
+var1 = var2;
+console.log(var1);
 
 
 /*
@@ -47,9 +48,9 @@ Do the following:
 
    HINT: look up the Number method
 */
-// let year = "1999";
-// year = Number(year);
-// console.log(year);
+let year = "1999";
+year = Number(year);
+console.log(year);
 /*
 Task 1d - Multiply
  
@@ -165,8 +166,6 @@ let compChoice = Math.floor(Math.random()*3);
        compChoice = "paper";  
      }
 function game(choice,compChoice){
-
-  
      if(choice === "scissors" && compChoice === "rock"){
             return "you lose!";
           }
@@ -297,9 +296,7 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(string1) {
-    /*add your code here*/
-}
+
 
 
 
