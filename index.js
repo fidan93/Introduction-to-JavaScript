@@ -296,9 +296,18 @@ Using the vowelCounter function below do the following:
 */
 
 
+function vowelCounter(string){
+const vowels=['A','a','E','e','I','i','O','o','u','U'];
+let count = 0;
+for(let i=0 ;i< vowels.length; i++){
+if (string.includes(vowels[i])){
+count++;
+}
+}
+return count;
+}
 
-
-
+console.log(vowelCounter('fidan'));
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
 function foo(){
